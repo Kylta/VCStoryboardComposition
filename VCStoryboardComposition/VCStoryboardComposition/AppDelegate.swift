@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if let views = (window?.rootViewController as? UITabBarController)?.viewControllers,
+            let single = views[0] as? SinglePlayerViewController,
+            let multi = views[1] as? MultiPlayerViewController,
+            let timedMulti = views[2] as? TimedMultiPlayerViewController {
+
+            // Single
+            _ = single.view
+            single.player?.name = "Test!"
+
+            // Multi
+            _ = multi.view
+            multi.players?.playerOne?.name = "Test Multi 1"
+            multi.players?.playerTwo?.name = "Test Multi 2"
+
+            _ = timedMulti.view
+            timedMulti.players?.playerOne?.name = "Test Timed Multi 1"
+            timedMulti.players?.playerTwo?.name = "Test Timed Multi 2"
+        }
         return true
     }
 

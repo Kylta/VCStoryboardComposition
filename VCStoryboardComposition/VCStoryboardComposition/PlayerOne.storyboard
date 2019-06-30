@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82B-TH-eD4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Score View Controller-->
+        <scene sceneID="u4k-Mv-wr6">
+            <objects>
+                <viewController id="82B-TH-eD4" customClass="PlayerScoreViewController" customModule="VCStoryboardComposition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T5V-IH-zcT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTo-Iy-QqT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UD0-W3-s7B">
+                                        <rect key="frame" x="8" y="8" width="45.5" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mike" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59o-LV-YVK">
+                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9,999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi2-LX-WWF">
+                                                <rect key="frame" x="0.0" y="28.5" width="45.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46913260919999999" green="0.7149516575" blue="0.62407517239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UD0-W3-s7B" firstAttribute="centerY" secondItem="vTo-Iy-QqT" secondAttribute="centerY" id="p6X-Np-HaW"/>
+                                    <constraint firstItem="UD0-W3-s7B" firstAttribute="leading" secondItem="vTo-Iy-QqT" secondAttribute="leading" constant="8" id="paZ-8F-ArB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vTo-Iy-QqT" firstAttribute="top" secondItem="T5V-IH-zcT" secondAttribute="top" id="3oS-nV-xdz"/>
+                            <constraint firstItem="4XN-6v-RPW" firstAttribute="trailing" secondItem="vTo-Iy-QqT" secondAttribute="trailing" id="QsA-O1-HBE"/>
+                            <constraint firstItem="vTo-Iy-QqT" firstAttribute="leading" secondItem="4XN-6v-RPW" secondAttribute="leading" id="j8o-VL-qBS"/>
+                            <constraint firstAttribute="bottom" secondItem="vTo-Iy-QqT" secondAttribute="bottom" id="kkd-xp-GhE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4XN-6v-RPW"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="65"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="59o-LV-YVK" id="4Jn-XY-ZZ6"/>
+                        <outlet property="scoreLabel" destination="Gi2-LX-WWF" id="teN-Gu-gaQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctw-qI-ngX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-187"/>
+        </scene>
+    </scenes>
+</document>

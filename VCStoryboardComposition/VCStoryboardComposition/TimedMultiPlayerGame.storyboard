@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVN-Rl-FAg">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MultiPlayerScore-->
+        <scene sceneID="HxG-sm-Nod">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MultiPlayerScore" id="5Jj-1r-SpV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8f-OS-VRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="-263"/>
+        </scene>
+        <!--TimeBar-->
+        <scene sceneID="ZPD-Jz-CcG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeBar" id="s4T-Si-Ord" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqY-Sz-RY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="-263"/>
+        </scene>
+        <!--Timed Multi player-->
+        <scene sceneID="x9d-TT-SbC">
+            <objects>
+                <viewController id="fVN-Rl-FAg" customClass="TimedMultiPlayerViewController" customModule="VCStoryboardComposition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ucH-ld-e3L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pca-0x-bvO">
+                                <rect key="frame" x="8" y="54" width="398" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="G4r-GY-syC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="s4T-Si-Ord" kind="embed" id="0mJ-gW-TQw"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-Sh-Dda">
+                                <rect key="frame" x="8" y="72" width="398" height="70"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTz-Xn-62c">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
+                                        <connections>
+                                            <segue destination="5Jj-1r-SpV" kind="embed" id="Ghl-OC-Qi4"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="XCx-h1-OD3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pca-0x-bvO" firstAttribute="leading" secondItem="LwT-og-zKU" secondAttribute="leading" constant="8" id="0EH-jg-Tfq"/>
+                            <constraint firstItem="LwT-og-zKU" firstAttribute="trailing" secondItem="pca-0x-bvO" secondAttribute="trailing" constant="8" id="BiT-bv-UaG"/>
+                            <constraint firstItem="pca-0x-bvO" firstAttribute="top" secondItem="LwT-og-zKU" secondAttribute="top" constant="10" id="UAp-uS-4UN"/>
+                            <constraint firstItem="LwT-og-zKU" firstAttribute="trailing" secondItem="i4r-Sh-Dda" secondAttribute="trailing" constant="8" id="W9U-wY-3QQ"/>
+                            <constraint firstItem="i4r-Sh-Dda" firstAttribute="leading" secondItem="LwT-og-zKU" secondAttribute="leading" constant="8" id="aYI-8M-k9c"/>
+                            <constraint firstItem="i4r-Sh-Dda" firstAttribute="top" secondItem="pca-0x-bvO" secondAttribute="bottom" constant="8" id="mqP-aA-6B4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LwT-og-zKU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Timed Multi player" id="mpw-pk-oEP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZE-NT-KhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="92"/>
+        </scene>
+    </scenes>
+</document>

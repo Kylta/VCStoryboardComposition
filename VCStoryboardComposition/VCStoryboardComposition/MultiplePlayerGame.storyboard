@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L8Q-40-AVF">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MultiPlayerScore-->
+        <scene sceneID="Nzr-CN-4gA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MultiPlayerScore" id="rml-QT-YYC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCb-am-TiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="-264"/>
+        </scene>
+        <!--Multi player-->
+        <scene sceneID="F6H-zK-E2d">
+            <objects>
+                <viewController id="L8Q-40-AVF" customClass="MultiPlayerViewController" customModule="VCStoryboardComposition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F3R-24-8XM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ULD-hk-6uB">
+                                <rect key="frame" x="8" y="52" width="398" height="70"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-e6-oqQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
+                                        <connections>
+                                            <segue destination="rml-QT-YYC" kind="embed" id="Al5-74-heO"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OpQ-PD-PCN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ULD-hk-6uB" firstAttribute="leading" secondItem="yxi-0D-Nm8" secondAttribute="leading" constant="8" id="Qfk-Up-gyb"/>
+                            <constraint firstItem="ULD-hk-6uB" firstAttribute="top" secondItem="yxi-0D-Nm8" secondAttribute="top" constant="8" id="Ubh-c0-sgm"/>
+                            <constraint firstItem="yxi-0D-Nm8" firstAttribute="trailing" secondItem="ULD-hk-6uB" secondAttribute="trailing" constant="8" id="hgL-pq-j9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxi-0D-Nm8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Multi player" id="Chg-tP-iw3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppH-IH-H0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="92"/>
+        </scene>
+    </scenes>
+</document>

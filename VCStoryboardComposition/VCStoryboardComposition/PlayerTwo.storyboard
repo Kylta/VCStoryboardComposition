@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7fg-Ls-SvD">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Score View Controller-->
+        <scene sceneID="cfE-yV-ixg">
+            <objects>
+                <viewController id="7fg-Ls-SvD" customClass="PlayerScoreViewController" customModule="VCStoryboardComposition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7he-pw-ZfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-dj-enh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wto-Lc-LKf">
+                                        <rect key="frame" x="360.5" y="8" width="45.5" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Caio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-xe-oAJ">
+                                                <rect key="frame" x="11" y="0.0" width="34.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9,999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7s-8w-8GQ">
+                                                <rect key="frame" x="0.0" y="28.5" width="45.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wto-Lc-LKf" firstAttribute="centerY" secondItem="BRg-dj-enh" secondAttribute="centerY" id="Rtc-Hl-37n"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wto-Lc-LKf" secondAttribute="trailing" constant="8" id="Tes-r3-3FY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BRg-dj-enh" firstAttribute="top" secondItem="7he-pw-ZfO" secondAttribute="top" id="OE4-Wf-HF3"/>
+                            <constraint firstAttribute="bottom" secondItem="BRg-dj-enh" secondAttribute="bottom" id="dY6-q7-ifH"/>
+                            <constraint firstItem="rtN-Im-nB1" firstAttribute="trailing" secondItem="BRg-dj-enh" secondAttribute="trailing" id="mmT-rn-QYO"/>
+                            <constraint firstItem="BRg-dj-enh" firstAttribute="leading" secondItem="rtN-Im-nB1" secondAttribute="leading" id="ufT-oh-lfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rtN-Im-nB1"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="65"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="aDS-xe-oAJ" id="RKj-aQ-QAi"/>
+                        <outlet property="scoreLabel" destination="G7s-8w-8GQ" id="722-ge-4DN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7w2-sO-H6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-187"/>
+        </scene>
+    </scenes>
+</document>
