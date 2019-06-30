@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="10" id="G4r-GY-syC"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="s4T-Si-Ord" kind="embed" id="0mJ-gW-TQw"/>
+                                    <segue destination="s4T-Si-Ord" kind="embed" identifier="TimeBar" id="0mJ-gW-TQw"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-Sh-Dda">
@@ -49,7 +49,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTz-Xn-62c">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
                                         <connections>
-                                            <segue destination="5Jj-1r-SpV" kind="embed" id="Ghl-OC-Qi4"/>
+                                            <segue destination="5Jj-1r-SpV" kind="embed" identifier="Players" id="Ghl-OC-Qi4"/>
                                         </connections>
                                     </containerView>
                                 </subviews>

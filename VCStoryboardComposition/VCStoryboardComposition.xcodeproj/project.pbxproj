@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		466BAD7D22C7597700A45713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BAD7C22C7597700A45713 /* AppDelegate.swift */; };
-		466BAD7F22C7597700A45713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BAD7E22C7597700A45713 /* ViewController.swift */; };
 		466BAD8222C7597700A45713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466BAD8022C7597700A45713 /* Main.storyboard */; };
 		466BAD8422C7597800A45713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466BAD8322C7597800A45713 /* Assets.xcassets */; };
 		466BAD8722C7597800A45713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466BAD8522C7597800A45713 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		466BAD7922C7597700A45713 /* VCStoryboardComposition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCStoryboardComposition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466BAD7C22C7597700A45713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		466BAD7E22C7597700A45713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		466BAD8122C7597700A45713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466BAD8322C7597800A45713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466BAD8622C7597800A45713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,24 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				466BAD7C22C7597700A45713 /* AppDelegate.swift */,
-				466BAD7E22C7597700A45713 /* ViewController.swift */,
-				466BADA422C8965F00A45713 /* PlayerScoreViewController.swift */,
-				466BADAE22C89DB500A45713 /* SinglePlayerViewController.swift */,
-				466BADB022C89DF000A45713 /* MultiPlayerViewController.swift */,
-				466BADB222C89E2500A45713 /* TimedMultiPlayerViewController.swift */,
 				466BAD8022C7597700A45713 /* Main.storyboard */,
-				466BAD9E22C8940E00A45713 /* SinglePlayerGame.storyboard */,
-				466BAD9C22C8905600A45713 /* PlayerOne.storyboard */,
-				466BADA022C894BB00A45713 /* PlayerTwo.storyboard */,
-				466BADA622C897DB00A45713 /* MultiPlayerScore.storyboard */,
-				466BADAC22C89B2D00A45713 /* TimeBarViewController.swift */,
-				466BADAA22C89A8300A45713 /* TimeBar.storyboard */,
-				466BADA822C89A6700A45713 /* TimedMultiPlayerGame.storyboard */,
-				466BADB422C89EAD00A45713 /* MultiPlayerScoreViewController.swift */,
-				466BADA222C8951600A45713 /* MultiplePlayerGame.storyboard */,
-				466BAD8322C7597800A45713 /* Assets.xcassets */,
-				466BAD8522C7597800A45713 /* LaunchScreen.storyboard */,
-				466BAD8822C7597800A45713 /* Info.plist */,
+				466BADB722C8A5AA00A45713 /* Single Player */,
+				466BADB822C8A5D500A45713 /* Multi Player */,
+				466BADB922C8A5E100A45713 /* Timed Multi Player */,
+				466BADB622C8A58D00A45713 /* Players Views */,
+				466BADBA22C8A5F100A45713 /* Supporting Files */,
 			);
 			path = VCStoryboardComposition;
 			sourceTree = "<group>";
@@ -133,6 +119,57 @@
 				466BAD9322C7597800A45713 /* Info.plist */,
 			);
 			path = VCStoryboardCompositionTests;
+			sourceTree = "<group>";
+		};
+		466BADB622C8A58D00A45713 /* Players Views */ = {
+			isa = PBXGroup;
+			children = (
+				466BADA422C8965F00A45713 /* PlayerScoreViewController.swift */,
+				466BAD9C22C8905600A45713 /* PlayerOne.storyboard */,
+				466BADA022C894BB00A45713 /* PlayerTwo.storyboard */,
+				466BADA622C897DB00A45713 /* MultiPlayerScore.storyboard */,
+				466BADB422C89EAD00A45713 /* MultiPlayerScoreViewController.swift */,
+			);
+			path = "Players Views";
+			sourceTree = "<group>";
+		};
+		466BADB722C8A5AA00A45713 /* Single Player */ = {
+			isa = PBXGroup;
+			children = (
+				466BADAE22C89DB500A45713 /* SinglePlayerViewController.swift */,
+				466BAD9E22C8940E00A45713 /* SinglePlayerGame.storyboard */,
+			);
+			path = "Single Player";
+			sourceTree = "<group>";
+		};
+		466BADB822C8A5D500A45713 /* Multi Player */ = {
+			isa = PBXGroup;
+			children = (
+				466BADB022C89DF000A45713 /* MultiPlayerViewController.swift */,
+				466BADA222C8951600A45713 /* MultiplePlayerGame.storyboard */,
+			);
+			path = "Multi Player";
+			sourceTree = "<group>";
+		};
+		466BADB922C8A5E100A45713 /* Timed Multi Player */ = {
+			isa = PBXGroup;
+			children = (
+				466BADB222C89E2500A45713 /* TimedMultiPlayerViewController.swift */,
+				466BADAC22C89B2D00A45713 /* TimeBarViewController.swift */,
+				466BADAA22C89A8300A45713 /* TimeBar.storyboard */,
+				466BADA822C89A6700A45713 /* TimedMultiPlayerGame.storyboard */,
+			);
+			path = "Timed Multi Player";
+			sourceTree = "<group>";
+		};
+		466BADBA22C8A5F100A45713 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				466BAD8322C7597800A45713 /* Assets.xcassets */,
+				466BAD8522C7597800A45713 /* LaunchScreen.storyboard */,
+				466BAD8822C7597800A45713 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +284,6 @@
 				466BADAD22C89B2D00A45713 /* TimeBarViewController.swift in Sources */,
 				466BADB522C89EAD00A45713 /* MultiPlayerScoreViewController.swift in Sources */,
 				466BADB322C89E2500A45713 /* TimedMultiPlayerViewController.swift in Sources */,
-				466BAD7F22C7597700A45713 /* ViewController.swift in Sources */,
 				466BADB122C89DF000A45713 /* MultiPlayerViewController.swift in Sources */,
 				466BAD7D22C7597700A45713 /* AppDelegate.swift in Sources */,
 				466BADAF22C89DB500A45713 /* SinglePlayerViewController.swift in Sources */,
@@ -414,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = VCStoryboardComposition/Info.plist;
+				INFOPLIST_FILE = "VCStoryboardComposition/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = VCStoryboardComposition/Info.plist;
+				INFOPLIST_FILE = "VCStoryboardComposition/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -32,7 +32,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-e6-oqQ">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
                                         <connections>
-                                            <segue destination="rml-QT-YYC" kind="embed" id="Al5-74-heO"/>
+                                            <segue destination="rml-QT-YYC" kind="embed" identifier="Players" id="Al5-74-heO"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
